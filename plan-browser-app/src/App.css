@@ -1,0 +1,39 @@
+.btn-primary {
+  background-color: #ec1c24 !important;
+  border-color: #ec1c24 !important;
+}
+
+.btn-primary:hover {
+  background-color: #b8171b !important; /* Slightly darker red for hover */
+  border-color: #b8171b !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-primary {
+  color: #ec1c24 !important;
+  border-color: #ec1c24 !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.active {
+  color: #fff !important;
+  background-color: #ec1c24 !important;
+  border-color: #ec1c24 !important;
+}
+
+.btn-outline-primary {
+  color: #ec1c24 !important;
+  border-color: #ec1c24 !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.active {
+  color: #fff !important;
+  background-color: #ec1c24
+ !important;
+  border-color: #ec1c24 !important;
+}
