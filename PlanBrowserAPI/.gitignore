@@ -1,0 +1,28 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Rider project files
+.idea/
+
+# Visual Studio Code settings
+.vscode/
+
+# ASP.NET Core publish output
+publish/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# ASP.NET Core secrets
+secrets.json
+
+# Logs
+*.log

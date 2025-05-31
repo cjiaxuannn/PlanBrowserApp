@@ -1,0 +1,11 @@
+@PlanBrowserAPI_HostAddress = http://localhost:5228
+
+### Get all plans
+GET {{PlanBrowserAPI_HostAddress}}/plans
+Accept: application/json
+
+###
+
+### Get plan by ID (replace 1 with desired ID)
+GET {{PlanBrowserAPI_HostAddress}}/plans/1
+Accept: application/json
