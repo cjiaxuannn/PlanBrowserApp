@@ -14,8 +14,8 @@ const PlansPage: React.FC = () => {
   //const [filter, setFilter] = useState<FilterType>('All');
 
   // Filter plans based on selected type
-  const filteredPlans =
-    filter === 'All' ? plans : plans.filter(plan => plan.type === filter);
+  //const filteredPlans =
+  //  filter === 'All' ? plans : plans.filter(plan => plan.type === filter);
 
   return (
     <div className="container mt-4">
@@ -41,7 +41,7 @@ const PlansPage: React.FC = () => {
 
       {/* Plans Grid */}
       <div className="row">
-        {filteredPlans.map(plan => (
+        {plans.map(plan => (
           <div key={plan.id} className="col-md-4 mb-4">
             <PlanCard
               plan={plan}
