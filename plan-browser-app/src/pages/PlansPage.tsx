@@ -7,9 +7,11 @@ const filterOptions = ['All', 'Prepaid', 'Postpaid'] as const;
 type FilterType = typeof filterOptions[number];
 
 const PlansPage: React.FC = () => {
-  const { plans, loading, error } = usePlans();
-  const [selectedPlanId, setSelectedPlanId] = useState<number | null>(null);
   const [filter, setFilter] = useState<FilterType>('All');
+  const { plans, loading, error } = usePlans(filter);
+  //const { plans, loading, error } = usePlans();
+  const [selectedPlanId, setSelectedPlanId] = useState<number | null>(null);
+  //const [filter, setFilter] = useState<FilterType>('All');
 
   // Filter plans based on selected type
   const filteredPlans =

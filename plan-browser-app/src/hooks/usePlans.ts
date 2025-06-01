@@ -15,17 +15,18 @@ export interface PlanDetail extends PlanSummary {
 }
 
 // Hook to fetch all plans
-export const usePlans = () => {
+export const usePlans = (filter?: string) => {
   const [plans, setPlans] = useState<PlanSummary[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    plansApi.getPlans()
+    setLoading(true);
+    plansApi.getPlans(filter)
       .then(setPlans)
       .catch(() => setError('Failed to load plans.'))
       .finally(() => setLoading(false));
-  }, []);
+  }, [filter]);
 
   return { plans, loading, error };
 };
